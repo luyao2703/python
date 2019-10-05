@@ -1,0 +1,59 @@
+求圆的面积
+#!/usr/bin/env python3
+import math
+area = r * 2 * math.pi		# 计算圓面积
+print("{:.10f}".format(area))	# {:.10f}保留10个小数点
+
+
+投资计算
+#!/usr/bin/env python3
+amount = float(input("Enter amount: "))		# 输入数额，Enter amount:可以换成中文
+inrate = float(input("Enter Interset rate: "))	# 输入利率，Enter Interset rate:可以换成中文
+period = float(input("Enter period: "))		# 输入年限，Enter period:可以换成中文
+value = 0
+year = 1
+while year <= period:
+	value = amount + (inrate * amount)
+	print("Year {} Rs. {:.2f}".format(year, value))	# Year可以改为‘年：’，Rs.可以改为‘本息：’
+	amount = value
+	year = year + 1
+
+
+乘法表
+#!/usr/bin/env python3
+print("*" * 50)	# 打印50个*符号
+i = 1	# 列数值
+while i < 11:
+    n = 1	# 行数值
+    while n <= 10:
+	print("{:3d}".format(i * n), end=' ') # 3d 是表示间距，可自行调节，end=' '引号中留有空格
+	n += 1	# 行加1递进
+    print()	# 
+    i += 1	# 列加1递进
+print("*" * 50)	# 打印50个*符号
+
+
+
+逢7及位数 就跳过小游戏
+a=0
+while a<100:
+	a=a+1
+	if a%7==7 or a//10==7:
+		continue
+	elif a%7==0:
+		continue
+	print(a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
